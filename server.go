@@ -4,9 +4,7 @@ import (
 	"log"
 	"net/http"
 	"strings"
-	"time"
-
-	"github.com/tarm/serial"
+	// "github.com/tarm/serial"
 )
 
 const dir = "./"
@@ -29,9 +27,9 @@ func main() {
 		fs.ServeHTTP(resp, req)
 	}))
 
-	fp, err := serial.OpenPort(&serial.Config{
-		Name:        tty,
-		Baud:        int(baud),
-		ReadTimeout: time.Second,
-	})
+	// fp, err := serial.OpenPort(&serial.Config{
+	// 	Name:        tty,
+	// 	Baud:        int(baud),
+	// 	ReadTimeout: time.Second,
+	// })
 }

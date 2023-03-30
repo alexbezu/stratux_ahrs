@@ -40,5 +40,10 @@
     "jest": "^26.0.1",
     "kind-of": ">=6.0.3",
     "minimist": ">=0.2.1"
-  }
+  },
+  "compilerOptions": {
+    "target": "ES6"
+  },
+  "include": ["js"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
